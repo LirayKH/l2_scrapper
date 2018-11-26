@@ -1,0 +1,20 @@
+{
+  "name": "la2scrapper",
+  "description": "Functions",
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "start": "node index.js",
+    "lint": "repo-tools lint",
+    "pretest": "npm run lint",
+    "system-test": "repo-tools test app",
+    "test": "npm run system-test",
+    "e2e-test": "repo-tools test deploy"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "puppeteer": "^1.10.0",
+    "express": "^4.16.3"
+  }
+}
